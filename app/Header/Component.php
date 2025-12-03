@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom Backdround Component.
+ * Custom Header Component.
  *
  * Manages the custom header component.
  *
@@ -11,7 +11,7 @@
  * @link      https://luthemes.com/portfolio/merriment
  */
 
-namespace Merriment\Background;
+namespace Merriment\Header;
 
 use Backdrop\Contracts\Bootable;
 
@@ -44,15 +44,13 @@ class Component implements Bootable {
 	 * @return void
 	 */
 	public function register() {
-        $defaults = array(
-            'default-color'          => '',
-            'default-image'          => get_parent_theme_file_uri( 'public/images/background.jpg' ),
-            'default-repeat'         => 'no-repeat',
-            'default-position-x'     => 'left',
-            'default-position-y'     => 'top',
-            'default-size'           => 'cover',
-            'default-attachment'     => 'scroll',
-        );
-        add_theme_support( 'custom-background', $defaults );
+		// Enable custom header support
+		add_theme_support('custom-header', [
+			'default-image' => get_template_directory_uri() . '/public/images/header-image.jpg',
+			'width'         => 1600,
+			'height'        => 400,
+			'flex-height'   => true,
+			'flex-width'    => true,
+		]);
 	}
 }
