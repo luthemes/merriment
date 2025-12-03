@@ -6,10 +6,10 @@
 <body <?php Backdrop\Attr\display( 'body' ); ?>>
 <?php wp_body_open(); ?>
 <div id="container" class="site-container">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'amicable' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'merriment' ); ?></a>
 	<header id="masthead" class="site-header">
 		<div class="site-header__container">
-			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+			<img src="<?php echo esc_url( get_header_image() ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="" />
 			<div class="site-header__branding">
 				<?php Backdrop\Site\display_title(); ?>
 				<?php Backdrop\Site\display_description(); ?>
