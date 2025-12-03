@@ -1,0 +1,44 @@
+{
+	"name": "luthemes/merriment",
+	"type": "classicpress-theme",
+	"description": "Merriment is a next-generation theme meticulously crafted for ClassicPress, delivering an unparalleled experience for showcasing your site's content.",
+	"keywords": [ "classicpress", "theme" ],
+	"homepage": "https://luthemes.com/portfolio/merriment",
+	"license": "GPL-2.0-or-later",
+	"version": "1.0.0",
+	"authors": [
+		{
+			"name": "Benjamin Lu",
+			"email": "benlumia007@gmail.com",
+			"homepage": "https://luthemes.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Merriment\\": "app"
+		},
+		"files": [
+			"app/Vite/functions-vite.php"
+		]
+	},
+	"require": {
+		"php": ">=8.0",
+		"backdrop-dev/customize": "dev-new-component",
+		"backdrop-dev/fonts": "dev-develop",
+		"backdrop-dev/framework": "1.0.x-dev"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"wptrt/wpthemereview": "*",
+		"php-parallel-lint/php-parallel-lint": "*"
+	},
+	"scripts": {
+		"lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs .",
+		"lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
