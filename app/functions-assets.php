@@ -28,10 +28,10 @@ add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( 'merrimentscreen', asset( 'resources/scss/screen.scss' ), null, null );
 
 	// Enqueue theme scripts
-	wp_enqueue_script( 'merrimentapp', asset( 'resources/js/app.js' ), [ 'jquery' ], null, true );
-	wp_localize_script( 'merrimentapp', 'merrimentScreenReaderText', [
-		'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'Merriment' ) . '</span>',
-		'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'Merriment' ) . '</span>',
+	wp_enqueue_script( 'merriment-app', asset( 'resources/js/app.js' ), [ 'jquery' ], null, true );
+	wp_localize_script( 'merriment-app', 'merrimentScreenReaderText', [
+		'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'merriment' ) . '</span>',
+		'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'merriment' ) . '</span>',
 	] );
 
 	// Loads ClassicPress' comment-reply script where appropriate.
