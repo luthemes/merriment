@@ -1,0 +1,8 @@
+@use '../01.settings/fonts' as fonts;
+
+body {
+	color: #677d89;
+	font-family: fonts.font-family( 'primary' );
+	line-height: 1.75;
+	margin: 0;
+}

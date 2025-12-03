@@ -1,0 +1,35 @@
+.site-header {
+    position: relative;
+
+    &__container {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__branding {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center both directions */
+        z-index: 10;
+        color: #ffffff; /* White text */
+        text-align: center;
+        padding: 1rem 1.5rem;
+    }
+
+    &__title {
+        font-size: 3.125rem;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
