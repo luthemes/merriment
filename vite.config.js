@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 
-export default defineConfig({
+export default defineConfig( {
   publicDir: false,
   build: {
     outDir: 'public/assets',   // Vite only manages this folder
@@ -10,9 +10,9 @@ export default defineConfig({
     emptyOutDir: true,         // cleans old CSS/JS on each build
     rollupOptions: {
       input: {
-        app: path.resolve(__dirname, 'resources/js/app.js'),
-        nav: path.resolve(__dirname, 'resources/js/navigation.js'),
-        screen: path.resolve(__dirname, 'resources/scss/screen.scss'),
+        app: path.resolve( __dirname, 'resources/js/app.js' ),
+        navigation: path.resolve( __dirname, 'resources/js/navigation.js' ),
+        screen: path.resolve( __dirname, 'resources/scss/screen.scss' ),
       },
       output: {
         entryFileNames: 'js/[name]-[hash].js',
