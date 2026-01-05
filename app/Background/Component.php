@@ -48,10 +48,8 @@ class Component implements Bootable {
             'default-color'          => '',
             'default-image'          => get_parent_theme_file_uri( 'public/images/background.jpg' ),
             'default-repeat'         => 'no-repeat',
-            'default-position-x'     => 'left',
-            'default-position-y'     => 'top',
             'default-size'           => 'cover',
-            'default-attachment'     => 'scroll',
+            'default-attachment'     => 'fixed',
         );
         add_theme_support( 'custom-background', $defaults );
 	}
