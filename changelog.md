@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.2 - 11.02.2026
+### Changed
+- Requires PHP 7.4 or later instead of 8.0, like the other luthemes themes. The theme doesn't use anything that needs PHP 8.
+
 ## 0.0.1 - 11.02.2026
 Merriment relaunched for ClassicPress, built on the Backdrop framework. Everything's new!
 

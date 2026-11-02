@@ -3,7 +3,7 @@ Merriment is a festive ClassicPress theme made to celebrate Christmas. It pairs 
 
 ## Requirements
 * ClassicPress 2.0 or later
-* PHP 8.0 or later
+* PHP 7.4 or later
 
 ## Development
 The theme's PHP dependencies come from Composer and its assets are built with [Vite](https://vite.dev).
