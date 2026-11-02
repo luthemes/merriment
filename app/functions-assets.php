@@ -24,14 +24,22 @@ use function Merriment\Vite\asset;
  */
 add_action( 'wp_enqueue_scripts', function() {
 
+	// Assets are enqueued by their source path. `Merriment\Vite\asset()` looks them up in Vite's
+	// manifest.json, which maps them to the built files, whose names change with their contents.
+
 	// Rather than enqueue the main style.css stylesheet, we are going to enqueue screen.css.
-	wp_enqueue_style( 'merrimentscreen', asset( 'resources/scss/screen.scss' ), null, null );
+	wp_enqueue_style( 'merriment-screen', asset( 'resources/scss/screen.scss' ), null, null );
 
 	// Enqueue theme scripts
 	wp_enqueue_script( 'merriment-app', asset( 'resources/js/app.js' ), [ 'jquery' ], null, true );
+
+	// Screen reader text for the menu toggles, in the form the other luthemes themes'
+	// `navigation.js` reads (as plain text).
 	wp_localize_script( 'merriment-app', 'merrimentScreenReaderText', [
-		'expand'   => '<span class="screen-reader-text">' . esc_html__( 'expand child menu', 'merriment' ) . '</span>',
-		'collapse' => '<span class="screen-reader-text">' . esc_html__( 'collapse child menu', 'merriment' ) . '</span>',
+		'expandMain'    => __( 'Open the main menu', 'merriment' ),
+		'collapseMain'  => __( 'Close the main menu', 'merriment' ),
+		'expandChild'   => __( 'expand child menu', 'merriment' ),
+		'collapseChild' => __( 'collapse child menu', 'merriment' ),
 	] );
 
 	// Loads ClassicPress' comment-reply script where appropriate.

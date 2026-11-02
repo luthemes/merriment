@@ -19,15 +19,12 @@
 	"autoload": {
 		"psr-4": {
 			"Merriment\\": "app"
-		},
-		"files": [
-			"app/Vite/functions-vite.php"
-		]
+		}
 	},
 	"require": {
 		"php": ">=8.0",
-		"backdrop-dev/fonts": "dev-develop",
-		"backdrop-dev/framework": "dev-develop"
+		"backdrop-dev/fonts": "dev-develop#c64cb8aafbacae0eea6231b0d86228c8a5d8940d",
+		"backdrop-dev/framework": "dev-develop#7989430268cc98d99a993e0e6bd6f11d3f418a8a"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",

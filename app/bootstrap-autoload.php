@@ -34,6 +34,9 @@ if ( file_exists( get_parent_theme_file_path( '/vendor/autoload.php' ) ) ) {
 array_map( function( $file ) {
 	require_once( get_parent_theme_file_path( "app/{$file}.php" ) ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 }, [
+	// Loaded here rather than by Composer, so `Merriment\Vite\asset()` exists even when
+	// `vendor/` was built before this file was added. The asset functions below use it.
+	'Vite/functions-vite',
 	'functions-assets',
 	'functions-extras',
 	'functions-filters',
