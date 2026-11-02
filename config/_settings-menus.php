@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Menu Settings Configuration.

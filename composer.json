@@ -2,7 +2,10 @@
 	"name": "luthemes/merriment",
 	"type": "classicpress-theme",
 	"description": "Merriment is a next-generation theme meticulously crafted for ClassicPress, delivering an unparalleled experience for showcasing your site's content.",
-	"keywords": [ "classicpress", "theme" ],
+	"keywords": [
+		"classicpress",
+		"theme"
+	],
 	"homepage": "https://luthemes.com/portfolio/merriment",
 	"license": "GPL-2.0-or-later",
 	"version": "1.0.0",
@@ -23,9 +26,8 @@
 	},
 	"require": {
 		"php": ">=8.0",
-		"backdrop-dev/customize": "dev-new-component",
 		"backdrop-dev/fonts": "dev-develop",
-		"backdrop-dev/framework": "1.0.x-dev"
+		"backdrop-dev/framework": "dev-develop"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
