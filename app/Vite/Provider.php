@@ -2,11 +2,13 @@
 /**
  * Vite assets provider
  *
+ * Binds the parent theme's Vite manifest, which `Merriment\Vite\asset()` reads.
+ *
  * @package   Merriment
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2025. Benjamin Lu
+ * @copyright 2025 Benjamin Lu
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
- * @link      https://luthemes/portfolio/merriment
+ * @link      https://luthemes.com/portfolio/merriment
  */
 
 namespace Merriment\Vite;
@@ -14,7 +16,7 @@ namespace Merriment\Vite;
 use Backdrop\Core\ServiceProvider;
 
 /**
- * App service provider.
+ * Vite service provider.
  *
  * @since  1.0.0
  * @access public
@@ -22,7 +24,7 @@ use Backdrop\Core\ServiceProvider;
 class Provider extends ServiceProvider {
 
 	/**
-	 * Callback executed when the `\Hybrid\Core\Application` class registers
+	 * Callback executed when the `Backdrop\Core\Application` class registers
 	 * providers. Use this method to bind items to the container.
 	 *
 	 * @since  1.0.0
@@ -31,8 +33,8 @@ class Provider extends ServiceProvider {
 	 */
     public function register(): void {
 
-        // Bind the Laravel Mix manifest for cache-busting.
-        $this->app->singleton( 'inheritance/vite/parent', function() {
+        // Bind the Vite manifest, which maps source paths to the hashed build files.
+        $this->app->singleton( 'merriment/vite/parent', function() {
 
             $file = get_template_directory() . '/' . 'public/assets/manifest.json';
 

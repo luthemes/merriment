@@ -8,11 +8,7 @@
 	</header>
 	<?php if ( has_post_thumbnail() ) { ?>
 		<picture class="post-thumbnail">
-		<?php
-			$size = get_theme_mod( 'theme_content_feature_image' );
-			$size = ! empty( $size ) ? $size : ( Amicable\Tools\Mod::fallback( 'featured_image_size' ) ?: 'inheritance-landscape-medium' );
-			the_post_thumbnail( $size );
-		?>			
+		<?php the_post_thumbnail(); ?>
 	</picture>
 	<?php } ?>
 	<div class="entry-content">
