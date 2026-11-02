@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.0.1 - Unreleased
+## 0.0.1 - 11.02.2026
 Merriment relaunched for ClassicPress, built on the Backdrop framework. Everything's new!
 
 ### Added

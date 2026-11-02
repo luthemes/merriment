@@ -1,0 +1,344 @@
+# Copyright (C) 2026 Benjamin Lu
+# This file is distributed under the GNU General Public License v2.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Merriment 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/luthemes/merriment/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-02T16:16:41+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: merriment\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Merriment"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://luthemes.com/portfolio/merriment"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Merriment is a festive ClassicPress theme made to celebrate Christmas, with a snowy header image, a holly background, and evergreen, holly red and candlelight gold accents. It is responsive and mobile ready, with a menu button at the bottom left on small screens, a left, right or no sidebar layout, and threaded comments."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Benjamin Lu"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://luthemes.com"
+msgstr ""
+
+#: app/Customize/Component.php:72
+msgid "Layout"
+msgstr ""
+
+#: app/Customize/Component.php:83
+msgid "Global Layout"
+msgstr ""
+
+#: app/Customize/Component.php:88
+msgid "Left Sidebar"
+msgstr ""
+
+#: app/Customize/Component.php:92
+msgid "Right Sidebar"
+msgstr ""
+
+#: app/Customize/Component.php:96
+msgid "No Sidebar"
+msgstr ""
+
+#. Translators: 1 is the Composer command, 2 is the theme folder.
+#: app/framework-missing.php:27
+#, php-format
+msgid "The Merriment theme can't find the Backdrop framework. Run %1$s in the %2$s folder, or upload a copy of the theme that includes its vendor folder."
+msgstr ""
+
+#: app/functions-assets.php:39
+msgid "Open the main menu"
+msgstr ""
+
+#: app/functions-assets.php:40
+msgid "Close the main menu"
+msgstr ""
+
+#: app/functions-assets.php:41
+msgid "expand child menu"
+msgstr ""
+
+#: app/functions-assets.php:42
+msgid "collapse child menu"
+msgstr ""
+
+#. Translators: %s is the post title for screen readers.
+#: app/functions-filters.php:30
+#, php-format
+msgid "Continue reading&nbsp;%s&nbsp;&rarr;"
+msgstr ""
+
+#: app/functions-template.php:31
+msgctxt "meta separator"
+msgid "&middot;"
+msgstr ""
+
+#: app/Tools/PoweredBy.php:35
+msgid "Powered by heart and soul."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:36
+msgid "Powered by crazy ideas and passion."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:37
+msgid "Powered by the thing that holds all things together in the universe."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:38
+msgid "Powered by love."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:39
+msgid "Powered by the vast and endless void."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:40
+msgid "Powered by the code of a maniac."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:41
+msgid "Powered by peace and understanding."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:42
+msgid "Powered by coffee."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:43
+msgid "Powered by sleepness nights."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:44
+msgid "Powered by the love of all things."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:45
+msgid "Powered by something greater than myself."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:46
+msgid "Powered by whispers from the future."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:47
+msgid "Powered by the fusion of technology and dreams."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:48
+msgid "Powered by the strength found in kindness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:49
+msgid "Powered by the melodies of the unseen world."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:50
+msgid "Powered by the courage of the unheard voices."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:51
+msgid "Powered by the beauty of the human spirit."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:52
+msgid "Powered by the quest for eternal wisdom."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:53
+msgid "Powered by the energy of uncharted galaxies."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:54
+msgid "Powered by the magic hidden in plain sight."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:55
+msgid "Powered by the legacy of the ancients."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:56
+msgid "Powered by the dance between light and darkness."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:57
+msgid "Powered by the touch of the morning sun."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:58
+msgid "Powered by the secrets of the deep ocean."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:59
+msgid "Powered by the echoes of laughter and joy."
+msgstr ""
+
+#: app/Tools/PoweredBy.php:60
+msgid "Powered by the relentless pursuit of truth."
+msgstr ""
+
+#: config/_settings-menus.php:17
+msgid "Primary Navigation"
+msgstr ""
+
+#: config/_settings-menus.php:20
+msgid "Social Navigation"
+msgstr ""
+
+#. Translators: 1 is the current year, 2 is a link to the home page.
+#: config/_settings-mods.php:58
+#, php-format
+msgid "&#169; %1$s. %2$s."
+msgstr ""
+
+#. Translators: 1 is a link to ClassicPress or WordPress, 2 is a link to the theme.
+#: config/_settings-mods.php:62
+#: config/_settings-mods.php:65
+#, php-format
+msgid "Powered by %1$s and %2$s."
+msgstr ""
+
+#: config/_settings-sidebars.php:18
+msgid "Primary Sidebar"
+msgstr ""
+
+#: config/_settings-sidebars.php:19
+msgid "The main sidebar for widgets alongside primary content."
+msgstr ""
+
+#: config/_settings-sidebars.php:22
+msgid "Footer Sidebar"
+msgstr ""
+
+#: config/_settings-sidebars.php:23
+msgid "A widget area displayed in the footer section of the site."
+msgstr ""
+
+#: index.php:13
+msgid "This site is temporarily unavailable."
+msgstr ""
+
+#: index.php:14
+msgid "Theme dependencies are missing"
+msgstr ""
+
+#: public/views/comment/default.php:15
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Translators: 1 is the number of comments, 2 is the post title.
+#: public/views/comments/default.php:19
+#, php-format
+msgid "%1$s comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: public/views/comments/default.php:40
+msgid "Comments are closed."
+msgstr ""
+
+#. Translators: %s is the search query.
+#: public/views/content/default.php:11
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: public/views/content/single.php:7
+msgid "Previous"
+msgstr ""
+
+#: public/views/content/single.php:8
+msgid "Next"
+msgstr ""
+
+#: public/views/entry/404.php:3
+msgid "Page not found"
+msgstr ""
+
+#: public/views/entry/404.php:6
+msgid "The page you were looking for could not be found. It may have been moved, or the link may be wrong. Try a search instead."
+msgstr ""
+
+#: public/views/entry/none.php:3
+msgid "Nothing found"
+msgstr ""
+
+#: public/views/entry/none.php:7
+msgid "Nothing matched your search. Try different keywords."
+msgstr ""
+
+#: public/views/entry/none.php:9
+msgid "There is nothing here yet. Try a search instead."
+msgstr ""
+
+#. Translators: %s is the category list.
+#: public/views/entry/single.php:22
+#, php-format
+msgid "Posted in %s"
+msgstr ""
+
+#. Translators: %s is the tag list.
+#: public/views/entry/single.php:27
+#, php-format
+msgid "Tagged %s"
+msgstr ""
+
+#: public/views/header/default.php:9
+msgid "Skip to content"
+msgstr ""
+
+#: public/views/menu/primary.php:2
+msgid "Primary"
+msgstr ""
+
+#: public/views/menu/primary.php:3
+msgid "Menu"
+msgstr ""
+
+#: public/views/menu/social.php:2
+msgid "Social"
+msgstr ""
+
+#: public/views/nav/pagination/post.php:4
+msgid "Pages:"
+msgstr ""
+
+#: public/views/nav/pagination/posts.php:2
+msgid "&larr; Previous"
+msgstr ""
+
+#: public/views/nav/pagination/posts.php:3
+msgid "Next &rarr;"
+msgstr ""
+
+#: public/views/nav/pagination/posts.php:4
+msgid "Posts navigation"
+msgstr ""
+
+#: public/views/sidebar/footer.php:1
+msgid "Footer"
+msgstr ""
+
+#: public/views/sidebar/primary.php:1
+msgid "Sidebar"
+msgstr ""
