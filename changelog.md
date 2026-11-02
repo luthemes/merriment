@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.3 - 11.02.2026
+### Added
+- The translation template, `public/lang/merriment.pot`, now includes the strings that come from the Backdrop framework, such as the pagination's Previous and Next, "Search results for: %s", "Archives" and the customizer's Theme: panels. The framework translates them through the theme's own text domain, so they are translated along with the rest of the theme; until now they were missing from the template, so they stayed in English.
+
 ## 0.0.2 - 11.02.2026
 ### Changed
 - Requires PHP 7.4 or later instead of 8.0, like the other luthemes themes. The theme doesn't use anything that needs PHP 8.
