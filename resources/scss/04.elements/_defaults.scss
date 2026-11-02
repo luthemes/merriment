@@ -1,8 +1,58 @@
 @use '../01.settings/fonts' as fonts;
+@use '../01.settings/colors' as colors;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 body {
-	color: #677d89;
+	color: colors.color( text );
 	font-family: fonts.font-family( 'primary' );
 	line-height: 1.75;
 	margin: 0;
+	overflow-wrap: break-word;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 0 0 1.5rem;
+}
+
+blockquote {
+	border-left: 4px solid colors.color( red );
+	color: colors.color( heading );
+	font-style: italic;
+	margin: 1.5rem 0;
+	padding: 0.25rem 0 0.25rem 1.25rem;
+}
+
+pre {
+	background: colors.color( light );
+	font-family: fonts.font-family( 'code' );
+	overflow-x: auto;
+	padding: 1rem;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 0 1.5rem;
+	width: 100%;
+
+	th,
+	td {
+		border: 1px solid colors.color( border );
+		padding: 0.5rem;
+	}
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid colors.color( border );
+	margin: 2rem 0;
 }

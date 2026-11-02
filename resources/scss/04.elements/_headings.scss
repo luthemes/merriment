@@ -1,36 +1,21 @@
-
 @use '../01.settings/fonts' as fonts;
+@use '../01.settings/colors' as colors;
 
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.58;
-}   
-
-h1 {
+	color: colors.color( heading );
 	font-family: fonts.font-family( 'heading' );
-	font-size: 2.5rem;
+	line-height: 1.3;
+	margin: 1.5rem 0 0.75rem;
 }
 
-h2 {
-	font-family: fonts.font-family( 'heading' );
-	font-size: 2rem;
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
 
-h3 {
-	font-family: fonts.font-family( 'heading' );
-	font-size: 1.5rem;
-}
-
-h4 {
-	font-family: fonts.font-family( 'heading' );
-	font-size: 1.25rem;
-}
-
-h5 {
-	font-family: fonts.font-family( 'heading' );
-	font-size: 1.125rem;
-}
-
-h6 {
-	font-family: fonts.font-family( 'heading' );
-	font-size: 1rem;
+@media screen and ( max-width: 768px ) {
+	h1 { font-size: 2rem; }
+	h2 { font-size: 1.625rem; }
 }

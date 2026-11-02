@@ -1,35 +1,70 @@
+@use '../01.settings/colors' as colors;
+@use '../01.settings/fonts' as fonts;
+
 .site-header {
-    position: relative;
+	position: relative;
 
-    &__container {
-        position: relative;
+	&__container {
+		position: relative;
+	}
 
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    }
+	&__image {
+		border-radius: 6px;
+		display: block;
+		height: auto;
+		width: 100%;
+	}
 
-    &__branding {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Center both directions */
-        z-index: 10;
-        color: #ffffff; /* White text */
-        text-align: center;
-        padding: 1rem 1.5rem;
-    }
+	&__branding {
+		padding: 1.5rem 1rem;
+		text-align: center;
+	}
 
-    &__title {
-        font-size: 3.125rem;
-        margin: 0;
-        padding: 0;
+	// Over the header image, the title and tagline are centered in white.
+	&__image + &__branding {
+		color: colors.color( white );
+		left: 50%;
+		padding: 1rem 1.5rem;
+		position: absolute;
+		text-shadow: 0 2px 8px rgba( 0, 0, 0, 0.45 );
+		top: 50%;
+		transform: translate( -50%, -50% );
+		width: 100%;
+		z-index: 10;
 
-        a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-    }
+		.site-header__title a,
+		.site-header__description {
+			color: colors.color( white );
+		}
+	}
+
+	.site-header__title {
+		font-family: fonts.font-family( 'heading' );
+		font-size: 3.125rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin: 0;
+		padding: 0;
+
+		a {
+			color: colors.color( heading );
+			text-decoration: none;
+		}
+	}
+
+	.site-header__description {
+		font-family: fonts.font-family( 'date' );
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	@media screen and ( max-width: 768px ) {
+		.site-header__title {
+			font-size: 2rem;
+		}
+
+		.site-header__description {
+			font-size: 1.5rem;
+		}
+	}
 }

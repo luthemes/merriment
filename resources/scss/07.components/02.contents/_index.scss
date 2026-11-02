@@ -1,18 +1,145 @@
+@use '../../01.settings/colors' as colors;
+@use '../../01.settings/fonts' as fonts;
+
+.archive-header {
+	border-bottom: 1px solid colors.color( border );
+	margin-bottom: 2rem;
+
+	&__title {
+		margin-top: 0;
+	}
+}
+
 .content-area {
 
-    .entry {
-        
-        &__header {
+	.entry {
+		margin-bottom: 3rem;
 
-        }
+		&__header {
+			margin-bottom: 1rem;
+		}
 
-        &__title {
-            margin: 0;
-            padding: 0;
-        }
+		&__title {
+			margin: 0;
+			padding: 0;
 
-        &__metadata {
-            font-size: 14px;
-        }
-    }
+			a {
+				color: colors.color( heading );
+				text-decoration: none;
+
+				&:hover,
+				&:focus {
+					color: colors.color( red );
+				}
+			}
+		}
+
+		&__metadata {
+			color: colors.color( muted );
+			font-size: 0.875rem;
+
+			a {
+				color: inherit;
+			}
+		}
+
+		&__published {
+			color: colors.color( red );
+			font-family: fonts.font-family( 'date' );
+			font-size: 1.5rem;
+			line-height: 1;
+		}
+
+		&__content {
+
+			> :first-child {
+				margin-top: 0;
+			}
+		}
+
+		&__footer {
+			border-top: 1px solid colors.color( border );
+			color: colors.color( muted );
+			font-size: 0.875rem;
+			margin-top: 2rem;
+			padding-top: 1rem;
+
+			> * {
+				display: block;
+			}
+		}
+	}
+
+	.post-thumbnail {
+		display: block;
+		margin: 0 0 1.25rem;
+
+		img {
+			border-radius: 6px;
+			display: block;
+		}
+	}
+
+	.more-link,
+	.entry-more-link {
+		font-weight: 700;
+	}
+}
+
+.post-navigation {
+	border-bottom: 1px solid colors.color( border );
+	border-top: 1px solid colors.color( border );
+	margin: 2rem 0;
+	padding: 1rem 0;
+
+	.nav-links {
+		display: flex;
+		gap: 1rem;
+		justify-content: space-between;
+	}
+
+	.nav-next {
+		margin-left: auto;
+		text-align: right;
+	}
+
+	&__label {
+		color: colors.color( muted );
+		display: block;
+		font-size: 0.75rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+}
+
+// Core alignment and caption classes.
+.alignleft {
+	float: left;
+	margin: 0 1.5rem 1rem 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 1rem 1.5rem;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 1rem;
+}
+
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption-text,
+figcaption {
+	color: colors.color( muted );
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+.sticky .entry__title::before {
+	color: colors.color( gold );
+	content: '\2605\00a0';
 }

@@ -1,0 +1,18 @@
+@use '../01.settings/colors' as colors;
+
+a {
+	color: colors.color( red );
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+
+	&:hover,
+	&:focus {
+		color: colors.color( red-dark );
+		text-decoration-thickness: 2px;
+	}
+
+	&:focus-visible {
+		outline: 2px solid colors.color( gold );
+		outline-offset: 2px;
+	}
+}
