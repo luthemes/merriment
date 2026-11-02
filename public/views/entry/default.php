@@ -10,7 +10,7 @@
 	</header>
 	<?php if ( has_post_thumbnail() ) { ?>
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail( 'medium_large' ); ?>
 		</a>
 	<?php } ?>
 	<div class="entry__content">

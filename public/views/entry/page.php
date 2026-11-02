@@ -4,7 +4,7 @@
 	</header>
 	<?php if ( has_post_thumbnail() ) : ?>
 		<figure class="post-thumbnail">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail( 'large' ); ?>
 		</figure>
 	<?php endif; ?>
 	<div class="entry__content">
