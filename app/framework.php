@@ -40,6 +40,7 @@ $theme->provider( Backdrop\Fonts\Provider::class );
  */
 $theme->provider( Merriment\Provider::class );
 $theme->provider( Merriment\Background\Provider::class );
+$theme->provider( Merriment\Customize\Provider::class );
 $theme->provider( Merriment\Header\Provider::class );
 $theme->provider( Merriment\Menu\Provider::class );
 $theme->provider( Merriment\Sidebar\Provider::class );

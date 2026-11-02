@@ -40,7 +40,8 @@ return [
 	# ----------------------------------------------------------------------
 	#
 	# Handles the content theme mods.
-	'theme_content_layout' => 'left-sidebar',
+	// Global layout: `left-sidebar`, `right-sidebar` or `no-sidebar` (see `Merriment\layout()`).
+	'theme_content_layout' => 'right-sidebar',
 
 	'featured_image_size' => 'merriment-landscape-medium',
 
