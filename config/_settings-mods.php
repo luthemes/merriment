@@ -40,7 +40,8 @@ return [
 	# ----------------------------------------------------------------------
 	#
 	# Handles the content theme mods.
-	'theme_content_layout' => 'left-sidebar',
+	// Global layout: `left-sidebar`, `right-sidebar` or `no-sidebar` (see `Merriment\layout()`).
+	'theme_content_layout' => 'right-sidebar',
 
 	'featured_image_size' => 'merriment-landscape-medium',
 
@@ -53,11 +54,14 @@ return [
 
 	'theme_footer_custom_credit' => function() {
 		$year = gmdate( 'Y' ); // Get the current year
+		// Translators: 1 is the current year, 2 is a link to the home page.
 		$copyright = sprintf( __( "&#169; %1\$s. %2\$s.", 'merriment' ), $year, Backdrop\Site\render_home_link() );
 
 		if ( is_classicpress() ) {
+			// Translators: 1 is a link to ClassicPress or WordPress, 2 is a link to the theme.
 			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'merriment' ), Backdrop\Site\render_cp_link(), Backdrop\Site\render_theme_link() );
 		} else {
+			// Translators: 1 is a link to ClassicPress or WordPress, 2 is a link to the theme.
 			$footer_text = sprintf( __( "Powered by %1\$s and %2\$s.", 'merriment' ), Backdrop\Site\render_wp_link(), Backdrop\Site\render_theme_link() );
 		}
 

@@ -1,0 +1,59 @@
+@use '../01.settings/fonts' as fonts;
+@use '../01.settings/colors' as colors;
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+textarea,
+select {
+	border: 1px solid colors.color( border );
+	border-radius: 4px;
+	color: colors.color( text );
+	font: inherit;
+	max-width: 100%;
+	padding: 0.5rem 0.75rem;
+
+	&:focus {
+		border-color: colors.color( green );
+		outline: 2px solid rgba( 31, 95, 63, 0.25 );
+	}
+}
+
+textarea {
+	width: 100%;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+.button {
+	background: colors.color( green );
+	border: 0;
+	border-radius: 4px;
+	color: colors.color( white );
+	cursor: pointer;
+	font-family: fonts.font-family( 'heading' );
+	font-size: 1rem;
+	padding: 0.55rem 1.1rem;
+
+	&:hover,
+	&:focus {
+		background: colors.color( green-dark );
+	}
+}
+
+.search-form {
+	display: flex;
+	gap: 0.5rem;
+
+	label {
+		flex: 1;
+	}
+
+	.search-field {
+		width: 100%;
+	}
+}

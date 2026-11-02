@@ -1,0 +1,184 @@
+@use '../01.settings/colors' as colors;
+@use '../01.settings/fonts' as fonts;
+
+// Small screens: a Menu button at the bottom left opens the menu above it
+// (see `resources/js/navigation.js`).
+@media screen and ( max-width: 768px ) {
+
+	.menu-toggle {
+		background: colors.color( red );
+		bottom: 1.125rem;
+		left: 1.125rem;
+		position: fixed;
+		transition: opacity 0.2s ease;
+		z-index: 9999;
+
+		&.hide {
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+
+	.primary-menu .menu__items {
+		left: -99999rem;
+		position: absolute;
+	}
+
+	.toggled .primary-menu {
+
+		.menu-toggle.hide {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.menu__items {
+			background: colors.color( green-dark );
+			border-radius: 6px;
+			bottom: 4rem;
+			left: 1.125rem;
+			list-style: none;
+			margin: 0;
+			max-height: 70vh;
+			overflow-y: auto;
+			padding: 0.5rem;
+			position: fixed;
+			right: 1.125rem;
+			z-index: 9998;
+		}
+
+		.menu__item {
+			position: relative;
+
+			a {
+				color: colors.color( white );
+				display: block;
+				padding: 0.6rem 3rem 0.6rem 0.75rem;
+				text-decoration: none;
+			}
+		}
+
+		.dropdown-toggle {
+			background: transparent;
+			padding: 0.6rem 0.9rem;
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			.arrow {
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-top: 6px solid colors.color( white );
+				display: inline-block;
+				transition: transform 0.3s ease;
+			}
+		}
+
+		.sub-menu {
+			display: none;
+			list-style: none;
+			margin: 0;
+			padding: 0 0 0 1rem;
+		}
+
+		.toggled-on {
+
+			> .sub-menu {
+				display: block;
+			}
+
+			> .dropdown-toggle .arrow {
+				transform: rotate( 180deg );
+			}
+		}
+	}
+}
+
+// Larger screens: a centered bar under the header with dropdown submenus.
+@media screen and ( min-width: 769px ) {
+
+	.primary-menu {
+		border-bottom: 1px solid colors.color( border );
+		margin-top: 0.75rem;
+
+		.menu-toggle,
+		.dropdown-toggle {
+			display: none;
+		}
+
+		.menu__items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.menu__item {
+			position: relative;
+
+			a {
+				color: colors.color( heading );
+				display: block;
+				font-family: fonts.font-family( 'heading' );
+				padding: 0.75rem 1rem;
+				text-decoration: none;
+
+				&:hover,
+				&:focus {
+					color: colors.color( red );
+				}
+			}
+
+			&--current > a {
+				color: colors.color( red );
+			}
+
+			&.has-children > a::after {
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid currentColor;
+				content: '';
+				display: inline-block;
+				margin-left: 0.4rem;
+				vertical-align: middle;
+			}
+		}
+
+		.sub-menu {
+			background: colors.color( green-dark );
+			border-radius: 4px;
+			left: 0;
+			list-style: none;
+			margin: 0;
+			min-width: 12rem;
+			opacity: 0;
+			padding: 0.25rem 0;
+			position: absolute;
+			top: 100%;
+			transform: translateY( -0.5rem );
+			transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
+			visibility: hidden;
+			z-index: 20;
+
+			a {
+				color: colors.color( white );
+				padding: 0.5rem 1rem;
+
+				&:hover,
+				&:focus {
+					color: colors.color( gold );
+				}
+			}
+		}
+
+		.menu__item:hover > .sub-menu,
+		.menu__item:focus-within > .sub-menu,
+		.menu__item.focus > .sub-menu {
+			opacity: 1;
+			transform: translateY( 0 );
+			transition-delay: 0s;
+			visibility: visible;
+		}
+	}
+}

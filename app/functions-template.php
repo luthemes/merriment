@@ -32,3 +32,20 @@ function sep( $sep = '' ) {
 		)
 	);
 }
+
+/**
+ * Returns the global layout: `left-sidebar`, `right-sidebar` or `no-sidebar`.
+ *
+ * @since  0.0.1
+ * @access public
+ * @return string
+ */
+function layout() {
+
+	$layout = Tools\Mod::get( 'theme_content_layout' );
+
+	return apply_filters(
+		'merriment/layout',
+		in_array( $layout, Customize\Component::LAYOUTS, true ) ? $layout : 'right-sidebar'
+	);
+}

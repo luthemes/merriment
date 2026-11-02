@@ -1,0 +1,25 @@
+@use 'sass:map';
+
+// Merriment's palette: winter evergreen, holly red and candlelight gold.
+@function colors() {
+
+	@return (
+		text:        #4f5f68,
+		heading:     #1d3b2f,
+		muted:       #6f8089,
+		red:         #a8232b,
+		red-dark:    #7f1a20,
+		green:       #1f5f3f,
+		green-dark:  #143f2a,
+		gold:        #c9a227,
+		border:      #e3e7e9,
+		light:       #f6f4ef,
+		white:       #ffffff,
+		black:       #111111
+	);
+}
+
+@function color( $name ) {
+
+	@return map.get( colors(), $name );
+}
