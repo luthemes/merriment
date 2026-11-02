@@ -11,7 +11,6 @@ export default defineConfig( {
     rollupOptions: {
       input: {
         app: path.resolve( __dirname, 'resources/js/app.js' ),
-        navigation: path.resolve( __dirname, 'resources/js/navigation.js' ),
         screen: path.resolve( __dirname, 'resources/scss/screen.scss' ),
       },
       output: {
