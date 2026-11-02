@@ -15,11 +15,11 @@
 
 return [
     'primary' => [
-        'name'        => 'Primary Sidebar',
-        'description' => 'The main sidebar for widgets alongside primary content.'
+        'name'        => __( 'Primary Sidebar', 'merriment' ),
+        'description' => __( 'The main sidebar for widgets alongside primary content.', 'merriment' ),
     ],
     'footer' => [
-        'name'        => 'Footer Sidebar',
-        'description' => 'A widget area displayed in the footer section of the site.'
+        'name'        => __( 'Footer Sidebar', 'merriment' ),
+        'description' => __( 'A widget area displayed in the footer section of the site.', 'merriment' ),
     ],
 ];
