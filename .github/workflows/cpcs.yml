@@ -1,9 +1,6 @@
 name: ClassicPress Directory Coding Standard checks.
 
-on:
-    push:
-        branches:
-            - develop
+on: [pull_request, push]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

@@ -25,19 +25,5 @@
 		"php": ">=8.0",
 		"backdrop-dev/fonts": "dev-develop#c64cb8aafbacae0eea6231b0d86228c8a5d8940d",
 		"backdrop-dev/framework": "dev-develop#7989430268cc98d99a993e0e6bd6f11d3f418a8a"
-	},
-	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"wptrt/wpthemereview": "*",
-		"php-parallel-lint/php-parallel-lint": "*"
-	},
-	"scripts": {
-		"lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs .",
-		"lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
-	},
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
 	}
 }
