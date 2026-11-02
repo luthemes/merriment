@@ -34,6 +34,14 @@ This theme bundles the following open-source fonts, served from the theme itself
 * [Merriweather](https://fonts.google.com/specimen/Merriweather) ([SIL Open Font License 1.1](http://scripts.sil.org/OFL))
 * [Tangerine](https://fonts.google.com/specimen/Tangerine) ([SIL Open Font License 1.1](http://scripts.sil.org/OFL))
 
+This theme bundles the following images, made for Merriment and licensed under the GNU GPL, version 2 or later, like the theme:
+
+* `public/images/header-image.jpg` - a snowy evergreen forest with a cabin under the moon.
+* `public/images/background.jpg` - holly, snowflakes and gold stars on evergreen.
+* `screenshot.png`
+
+The sources of the two images are in `resources/images` as SVG.
+
 == Changelog ==
 See changelog.md.
 
